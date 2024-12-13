@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirens - Album Cover Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Santa Catarina';
+            src: url('fonts/SantaCatarina-Regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Inria Sans';
+            src: url('fonts/InriaSans-Regular.woff2') format('woff2');
+        }
+
+        body {
+            font-family: 'Inria Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .logo {
+            font-family: 'Santa Catarina', cursive;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .images img {
+            width: 45%;
+            margin: 0 10px;
+            border-radius: 8px;
+        }
+
+        .track-list img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .track {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .track-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .track p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .track button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .track button:hover {
+            background-color: #555;
+        }
+
+        .side-nav {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .side-nav ul li {
+            margin: 10px 0;
+        }
+
+        .side-nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .side-nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .intro .images img:last-child {
+            width: 150px;
+            margin: 20px 0 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="album.html">Features</a></li>
+                <li><a href="merch.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">SIRENS</h1>
+    </header>
+
+    <!-- Боковая навигация -->
+    <div class="side-nav">
+        <ul>
+            <li><a href="album.html">Features</a></li>
+            <li><a href="merch.html">Shop</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Главное изображение -->
+    <section class="hero">
+        <img src="images/image_1.png" alt="Sirens Album Cover">
+    </section>
+
+    <!-- Описание альбома -->
+    <section class="intro">
+        <h2>Where Rock Meets Pop – Sound That Calls You In</h2>
+        <p>
+            Dive into the hypnotic waves of Sirens, a band that fuses raw rock energy with melodic pop hooks. 
+            Our music is a blend of powerful rhythms, soaring vocals, and anthemic choruses that will resonate 
+            with you long after the song ends. Welcome to our world – loud, bold, and unforgettable.
+        </p>
+        <div class="images">
+            <img src="images/image_2.png" alt="Artist Image 1">
+            <img src="images/image_3.png" alt="Artist Image 2">
+            <img src="images/photo_7.png" alt="New Merchandise">
+        </div>
+    </section>
+
+    <!-- О группе -->
+    <section class="about">
+        <h2>About</h2>
+        <p>
+            Sirens is a genre-bending band born from the fusion of two distinct worlds: the rebellious spirit 
+            of rock and the infectious melodies of pop. We’re here to create music that moves you, whether it’s 
+            the adrenaline rush of a hard-hitting guitar riff or the catchiness of a pop chorus you can’t get out 
+            of your head. Our sound is built on passion, energy, and a desire to push musical boundaries.
+        </p>
+    </section>
+
+    <!-- Последние треки -->
+    <section class="tracks">
+        <h2>Listen to Our Latest Tracks</h2>
+        <div class="track-list">
+            <div class="track">
+                <img src="images/image_4.png" alt="Track 1">
+                <p>Heartbeats Collide</p>
+                <button>▶</button>
+            </div>
+            <div class="track">
+                <img src="images/image_5.png" alt="Track 2">
+                <p>Electric Summer</p>
+                <button>▶</button>
+            </div>
+            <div class="track">
+                <img src="images/image_6.png" alt="Track 3">
+                <p>Echoes</p>
+                <button>▶</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="album.html">Features</a></li>
+                <li><a href="merch.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="logo">SIRENS</p>
+    </footer>
+</body>
+</html>

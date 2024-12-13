@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirens Merchandise</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: 'Inria Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .merch-items {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .merch-item {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .merch-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .merch-item p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .merch-item .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .merch-item button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .merch-item button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="album.html">Features</a></li>
+                <li><a href="merch.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">SIRENS</h1>
+    </header>
+
+    <!-- Раздел с товарами -->
+    <section class="merch-items">
+        <h2>Merchandise</h2>
+        <div class="merch-item">
+            <img src="images/photo_7.png" alt="Band T-Shirt">
+            <p>Cool Band T-Shirt</p>
+            <p class="price">$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="album.html">Features</a></li>
+                <li><a href="merch.html">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="logo">SIRENS</p>
+    </footer>
+</body>
+</html>
